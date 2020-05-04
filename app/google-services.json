@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1079856320968",
+    "firebase_url": "https://battlezone-353a3.firebaseio.com",
+    "project_id": "battlezone-353a3",
+    "storage_bucket": "battlezone-353a3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1079856320968:android:88fdad12792a176593f0fd",
+        "android_client_info": {
+          "package_name": "com.bwithhkj.battle.zone.tournaments"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1079856320968-c1pmsktag8sgak81l1b6l14jq7fbl8hn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFlds6bGNgxwnSK50fhsoGh9Nnb4rH3a4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1079856320968-c1pmsktag8sgak81l1b6l14jq7fbl8hn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
