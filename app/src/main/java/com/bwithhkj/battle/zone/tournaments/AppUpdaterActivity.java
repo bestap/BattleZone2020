@@ -1,4 +1,4 @@
-package com.player.battle.world.tournaments;
+package com.bwithhkj.battle.zone.tournaments;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.player.battle.world.tournaments.config.config;
+import com.bwithhkj.battle.zone.tournaments.config.config;
 
 public class AppUpdaterActivity extends AppCompatActivity {
 

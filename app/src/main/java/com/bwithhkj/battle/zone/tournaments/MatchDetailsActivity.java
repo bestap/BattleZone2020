@@ -1,4 +1,4 @@
-package com.player.battle.world.tournaments;
+package com.bwithhkj.battle.zone.tournaments;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -21,7 +21,7 @@ import android.widget.Toast;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.facebook.shimmer.ShimmerFrameLayout;
-import com.player.battle.world.tournaments.config.config;
+import com.bwithhkj.battle.zone.tournaments.config.config;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -442,17 +442,17 @@ public class MatchDetailsActivity extends AppCompatActivity {
                             matchtype.setText(matchType);
 
                             StringBuilder stringBuilderwinPrize = new StringBuilder();
-                            stringBuilderwinPrize.append("₹");
+                            stringBuilderwinPrize.append("Rs");
                             stringBuilderwinPrize.append(matchWinPrize);
                             winPrize.setText(stringBuilderwinPrize.toString());
 
                             StringBuilder stringBuilderperKillPrize = new StringBuilder();
-                            stringBuilderperKillPrize.append("₹");
+                            stringBuilderperKillPrize.append("Rs");
                             stringBuilderperKillPrize.append(matchPerKill);
                             perKillPrize.setText(stringBuilderperKillPrize.toString());
 
                             StringBuilder stringBuilder2 = new StringBuilder();
-                            stringBuilder2.append("₹ ");
+                            stringBuilder2.append("Rs ");
                             stringBuilder2.append(matchEntryFee);
                             fee.setText(stringBuilder2.toString());
 

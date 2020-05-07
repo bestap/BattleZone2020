@@ -1,17 +1,18 @@
-package com.player.battle.world.tournaments;
+package com.bwithhkj.battle.zone.tournaments;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.AsyncTask;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.player.battle.world.tournaments.config.config;
+import com.bwithhkj.battle.zone.tournaments.config.config;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -33,6 +34,7 @@ public class LoginActivity extends AppCompatActivity {
 
     // url to get all products list
     private static final String url = config.mainurl + "signin_user.php";
+   // private static final String url ="http://battlezone123.000webhostapp.com/battleworld/signin_user.php";
 
     // JSON Node names
     private static final String TAG_SUCCESS = "success";
@@ -160,7 +162,12 @@ public class LoginActivity extends AppCompatActivity {
             JSONObject json = jsonParser.makeHttpRequest(url, "POST", params);
 
             // Check your log cat for JSON reponse
-//            Log.d("All jsonarray: ", json.toString());
+      //    Log.d("All jsonarray: ", json.toString());
+              //  Log.i("tagconvertstr", json.toString());
+
+
+
+           // Log.e("anyText",json.toString());
 
             try {
                 // Checking for SUCCESS TAG

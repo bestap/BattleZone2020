@@ -1,4 +1,4 @@
-package com.player.battle.world.tournaments;
+package com.bwithhkj.battle.zone.tournaments;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -13,7 +13,7 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.player.battle.world.tournaments.config.config;
+import com.bwithhkj.battle.zone.tournaments.config.config;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -142,7 +142,7 @@ public class EditProfileActivity extends AppCompatActivity {
         saveButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(fname.getText().length() >1 && lname.getText().length()>1 && pubgusername.getText().length()>1 && mNumber.getText().length() >8) {
+                if(fname.getText().length() >1 && lname.getText().length()>1 && pubgusername.getText().length()>1 && mNumber.getText().length() >9) {
                     // Loading jsonarray in Background Thread
                     new OneLoadAllProducts().execute();
                 } else {
@@ -153,8 +153,8 @@ public class EditProfileActivity extends AppCompatActivity {
         resetPassButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(oldPass.getText().length() >1 && newPass.getText().length()>1 && retypeNewPass.getText().length()>1) {
-                    if (newPass.equals(retypeNewPass)) {
+                if(oldPass.getText().length() >1 && newPass.getText().length()>3 && retypeNewPass.getText().length()>3) {
+                    if (newPass.getText().toString().equals(retypeNewPass.getText().toString())) {
                         // Loading jsonarray in Background Thread
                         new ResetPassword().execute();
                     } else {

@@ -1,4 +1,4 @@
-package com.player.battle.world.tournaments;
+package com.bwithhkj.battle.zone.tournaments;
 
 import android.content.Context;
 import android.util.AttributeSet;

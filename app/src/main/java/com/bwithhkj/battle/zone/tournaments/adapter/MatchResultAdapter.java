@@ -1,4 +1,4 @@
-package com.player.battle.world.tournaments.adapter;
+package com.bwithhkj.battle.zone.tournaments.adapter;
 
 import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -6,8 +6,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.player.battle.world.tournaments.R;
-import com.player.battle.world.tournaments.data.MatchResult;
+import com.bwithhkj.battle.zone.tournaments.R;
+import com.bwithhkj.battle.zone.tournaments.data.MatchResult;
 
 import java.util.List;
 

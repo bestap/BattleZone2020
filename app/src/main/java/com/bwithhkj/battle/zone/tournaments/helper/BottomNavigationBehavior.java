@@ -1,4 +1,4 @@
-package com.player.battle.world.tournaments.helper;
+package com.bwithhkj.battle.zone.tournaments.helper;
 
 import android.content.Context;
 import com.google.android.material.bottomnavigation.BottomNavigationView;

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">BattleWorld</string>
+    <string name="app_name">BattleZone</string>
 
     <string name="regSuccessMessage">Registered Successfully! Login Now.</string>
     <string name="title_activity_home">HomeActivity</string>

@@ -1,8 +1,6 @@
-package com.player.battle.world.tournaments.data;
+package com.bwithhkj.battle.zone.tournaments.data;
 
-/**
- * Created by rajan on 15/01/16.
- */
+
 public class MatchResult {
 
     private String playerKills;

@@ -1,4 +1,4 @@
-package com.player.battle.world.tournaments.fragment;
+package com.bwithhkj.battle.zone.tournaments.fragment;
 
 import android.graphics.Color;
 import android.os.Bundle;
@@ -10,9 +10,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.player.battle.world.tournaments.MyWalletActivity;
-import com.player.battle.world.tournaments.PrefManager;
-import com.player.battle.world.tournaments.R;
+import com.bwithhkj.battle.zone.tournaments.MyWalletActivity;
+import com.bwithhkj.battle.zone.tournaments.PrefManager;
+import com.bwithhkj.battle.zone.tournaments.R;
 
 
 public class AddMoneyFragment extends Fragment {

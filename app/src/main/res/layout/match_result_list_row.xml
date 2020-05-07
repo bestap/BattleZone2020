@@ -73,7 +73,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/lato"
-                android:text="₹ 175" />
+                android:text="Rs 175" />
         </LinearLayout>
     </LinearLayout>
 

@@ -104,7 +104,7 @@
                                 android:layout_gravity="center"
                                 android:layout_marginLeft="5.0dip"
                                 android:fontFamily="@font/muli_semibold"
-                                android:text="₹ 500"
+                                android:text="Rs 500"
                                 android:textColor="#ffffffff"
                                 android:textSize="15.0sp"
                                 android:textStyle="bold" />
@@ -218,7 +218,7 @@
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/muli_semibold"
                                 android:gravity="center"
-                                android:text="₹ 530"
+                                android:text="Rs 530"
                                 android:textColor="#ff3796bc"
                                 android:textSize="23.0sp"
                                 android:textStyle="bold" />

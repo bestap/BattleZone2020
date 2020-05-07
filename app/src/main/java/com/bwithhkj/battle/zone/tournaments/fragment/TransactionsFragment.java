@@ -1,4 +1,4 @@
-package com.player.battle.world.tournaments.fragment;
+package com.bwithhkj.battle.zone.tournaments.fragment;
 
 import android.content.Context;
 import android.os.AsyncTask;
@@ -15,12 +15,12 @@ import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.facebook.shimmer.ShimmerFrameLayout;
-import com.player.battle.world.tournaments.JSONParser;
-import com.player.battle.world.tournaments.PrefManager;
-import com.player.battle.world.tournaments.R;
-import com.player.battle.world.tournaments.adapter.TransactionsAdapter;
-import com.player.battle.world.tournaments.config.config;
-import com.player.battle.world.tournaments.data.Transactions;
+import com.bwithhkj.battle.zone.tournaments.JSONParser;
+import com.bwithhkj.battle.zone.tournaments.PrefManager;
+import com.bwithhkj.battle.zone.tournaments.R;
+import com.bwithhkj.battle.zone.tournaments.adapter.TransactionsAdapter;
+import com.bwithhkj.battle.zone.tournaments.config.config;
+import com.bwithhkj.battle.zone.tournaments.data.Transactions;
 
 import org.json.JSONArray;
 import org.json.JSONException;

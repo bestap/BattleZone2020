@@ -1,4 +1,4 @@
-package com.player.battle.world.tournaments.adapter;
+package com.bwithhkj.battle.zone.tournaments.adapter;
 
 import android.content.Context;
 import android.content.Intent;
@@ -18,9 +18,9 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
-import com.player.battle.world.tournaments.R;
-import com.player.battle.world.tournaments.config.config;
-import com.player.battle.world.tournaments.data.Ongoing;
+import com.bwithhkj.battle.zone.tournaments.R;
+import com.bwithhkj.battle.zone.tournaments.config.config;
+import com.bwithhkj.battle.zone.tournaments.data.Ongoing;
 
 import java.text.DateFormat;
 import java.text.ParseException;

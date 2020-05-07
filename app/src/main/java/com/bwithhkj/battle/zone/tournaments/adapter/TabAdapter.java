@@ -1,4 +1,4 @@
-package com.player.battle.world.tournaments.adapter;
+package com.bwithhkj.battle.zone.tournaments.adapter;
 
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;

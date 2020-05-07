@@ -1,33 +1,34 @@
-package com.player.battle.world.tournaments;
+package com.bwithhkj.battle.zone.tournaments;
 
 import android.app.ProgressDialog;
-//import instamojo.library.InstapayListener;
-//import instamojo.library.InstamojoPay;
-
-import org.json.JSONException;
-
 import android.content.Intent;
 import android.os.AsyncTask;
+import android.os.Bundle;
 import android.view.WindowManager;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
-import com.google.android.material.tabs.TabLayout;
+
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
-import androidx.appcompat.app.AppCompatActivity;
-import android.os.Bundle;
-import android.widget.LinearLayout;
-import android.widget.TextView;
 
+import com.bwithhkj.battle.zone.tournaments.config.config;
+import com.bwithhkj.battle.zone.tournaments.fragment.AddMoneyFragment;
+import com.bwithhkj.battle.zone.tournaments.fragment.TransactionsFragment;
+import com.bwithhkj.battle.zone.tournaments.fragment.WithdrawFragment;
+
+//esewa
+//import com.esewa.android.sdk.payment.ESewaConfiguration;
+
+import com.google.android.material.tabs.TabLayout;
 import com.paytm.pgsdk.PaytmOrder;
 import com.paytm.pgsdk.PaytmPGService;
 import com.paytm.pgsdk.PaytmPaymentTransactionCallback;
-import com.player.battle.world.tournaments.config.config;
-import com.player.battle.world.tournaments.fragment.AddMoneyFragment;
-import com.player.battle.world.tournaments.fragment.TransactionsFragment;
-import com.player.battle.world.tournaments.fragment.WithdrawFragment;
 
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
@@ -35,6 +36,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Random;
+
+
 
 public class MyWalletActivity extends AppCompatActivity implements PaytmPaymentTransactionCallback {
 
@@ -99,6 +102,18 @@ public class MyWalletActivity extends AppCompatActivity implements PaytmPaymentT
 
     private int success;
 
+/*
+    //esewa
+    private static final String CONFIG_ENVIRONMENT = ESewaConfiguration.ENVIRONMENT_TEST;
+    private static final int REQUEST_CODE_PAYMENT = 1;
+    private ESewaConfiguration eSewaConfiguration;
+
+    private static final String MERCHANT_ID = "JB0BBQ4aD0UqIThFJwAKBgAXEUkEGQUBBAwdOgABHD4DChwUAB0R";
+    private static final String MERCHANT_SECRET_KEY = "BhwIWQQADhIYSxILExMcAgFXFhcOBwAKBgAXEQ==";*/
+
+
+
+
     public void PaytmAddMoney(String email, String phone, String amount, String purpose, String buyername) {
 
         paytmemail = email;
@@ -111,6 +126,7 @@ public class MyWalletActivity extends AppCompatActivity implements PaytmPaymentT
         final int max = 10000;
         final int random = new Random().nextInt((max - min) + 1) + min;
         paytmorder_id = prf.getString(TAG_USERID) +random;
+
 
         // Join Player in Match in Background Thread
         new GetChecksum().execute();
@@ -333,6 +349,13 @@ public class MyWalletActivity extends AppCompatActivity implements PaytmPaymentT
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_wallet);
 
+        /*//esewa init
+        eSewaConfiguration = new ESewaConfiguration()
+                .clientId(MERCHANT_ID)
+                .secretKey(MERCHANT_SECRET_KEY)
+                .environment(CONFIG_ENVIRONMENT);*/
+
+
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
 
         // Call the function callInstamojo to start payment here
@@ -345,7 +368,7 @@ public class MyWalletActivity extends AppCompatActivity implements PaytmPaymentT
         username = prf.getString(TAG_USERNAME);
         email = prf.getString(TAG_EMAIL);
         number = prf.getString(TAG_MOBILE);
-        walletBalance.setText("₹ "+balance);
+        walletBalance.setText("Rs "+balance);
 
         viewPager = (ViewPager) findViewById(R.id.viewpager);
         setupViewPager(viewPager);

@@ -23,7 +23,7 @@
                 android:layout_gravity="center"
                 android:fontFamily="@font/muli_bold"
                 android:paddingLeft="15.0dip"
-                android:text="₹ "
+                android:text="Rs"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
                 android:textSize="25.0dip" />
 

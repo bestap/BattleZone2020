@@ -1,4 +1,4 @@
-package com.player.battle.world.tournaments.fragment;
+package com.bwithhkj.battle.zone.tournaments.fragment;
 
 import android.content.Context;
 import androidx.recyclerview.widget.RecyclerView;

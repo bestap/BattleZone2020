@@ -1,4 +1,4 @@
-package com.player.battle.world.tournaments;
+package com.bwithhkj.battle.zone.tournaments;
 
 import android.app.ProgressDialog;
 import android.os.AsyncTask;
@@ -13,9 +13,9 @@ import androidx.appcompat.widget.Toolbar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.player.battle.world.tournaments.adapter.MatchResultAdapter;
-import com.player.battle.world.tournaments.config.config;
-import com.player.battle.world.tournaments.data.MatchResult;
+import com.bwithhkj.battle.zone.tournaments.adapter.MatchResultAdapter;
+import com.bwithhkj.battle.zone.tournaments.config.config;
+import com.bwithhkj.battle.zone.tournaments.data.MatchResult;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -347,7 +347,7 @@ public class MatchResultActivity extends AppCompatActivity {
                             matchresult.setPlayerKills(offersListWon.get(i).get(TAG_KILLS));
 
                             StringBuilder stringBuilder = new StringBuilder();
-                            stringBuilder.append("₹ ");
+                            stringBuilder.append("Rs ");
                             stringBuilder.append(offersListWon.get(i).get(TAG_WONAMOUNT));
                             matchresult.setPlayerWinning(stringBuilder.toString());
 
@@ -368,7 +368,7 @@ public class MatchResultActivity extends AppCompatActivity {
                             matchresult.setPlayerKills(offersList.get(i).get(TAG_KILLS));
 
                             StringBuilder stringBuilder = new StringBuilder();
-                            stringBuilder.append("₹ ");
+                            stringBuilder.append("Rs ");
                             stringBuilder.append(offersList.get(i).get(TAG_WONAMOUNT));
                             matchresult.setPlayerWinning(stringBuilder.toString());
 

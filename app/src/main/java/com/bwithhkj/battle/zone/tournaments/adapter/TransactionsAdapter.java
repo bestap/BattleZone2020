@@ -1,4 +1,4 @@
-package com.player.battle.world.tournaments.adapter;
+package com.bwithhkj.battle.zone.tournaments.adapter;
 
 import android.graphics.Color;
 import androidx.recyclerview.widget.RecyclerView;
@@ -7,8 +7,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.player.battle.world.tournaments.R;
-import com.player.battle.world.tournaments.data.Transactions;
+import com.bwithhkj.battle.zone.tournaments.R;
+import com.bwithhkj.battle.zone.tournaments.data.Transactions;
 
 import java.text.DateFormat;
 import java.text.ParseException;
@@ -77,7 +77,7 @@ public class TransactionsAdapter extends RecyclerView.Adapter<TransactionsAdapte
         if (txnType.equals("1")) {
             holder.txnType.setText("CREDIT");
             StringBuilder stringBuilder = new StringBuilder();
-            stringBuilder.append("+ ₹");
+            stringBuilder.append("+ Rs");
             stringBuilder.append(transactions.getTxnAmount());
             holder.txnAmount.setText(stringBuilder.toString());
         } else if (txnType.equals("0")) {
@@ -85,7 +85,7 @@ public class TransactionsAdapter extends RecyclerView.Adapter<TransactionsAdapte
             holder.txnType.setTextColor(Color.parseColor("#ff0000"));
 
             StringBuilder stringBuilder2 = new StringBuilder();
-            stringBuilder2.append("- ₹");
+            stringBuilder2.append("- Rs");
             stringBuilder2.append((-1) * Integer.parseInt(transactions.getTxnAmount()));
             holder.txnAmount.setText(stringBuilder2.toString());
             holder.txnAmount.setTextColor(Color.parseColor("#ff0000"));

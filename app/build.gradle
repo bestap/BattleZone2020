@@ -8,11 +8,14 @@ buildscript {
 }
 apply plugin: 'com.onesignal.androidsdk.onesignal-gradle-plugin'
 
+
 repositories {
     maven { url 'https://maven.google.com' }
+    flatDir {dirs 'libs'}
 }
 
 apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
 
 android {
     compileSdkVersion 28
@@ -24,10 +27,10 @@ android {
         }
         vectorDrawables.useSupportLibrary = true
 
-        applicationId "com.player.battle.world.tournaments"
+        applicationId "com.bwithhkj.battle.zone.tournaments"
 
         // TODO: Please update the OneSignal ID below to yours!
-        manifestPlaceholders = [onesignal_app_id: 'a6c132b4-c59d-422d-a8d8-cf30b5be55c7',
+        manifestPlaceholders = [onesignal_app_id: '5dab3bd9-fce3-464c-a41d-bb6527a8d10a',
                                 // Project number pulled from dashboard, local value is ignored.
                                 onesignal_google_project_number: 'REMOTE']
 
@@ -67,8 +70,9 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.google.firebase:firebase-analytics:17.2.2'
     implementation 'androidx.vectordrawable:vectordrawable:1.0.0'
-
+  //  compile(name: 'eSewaSdk', ext: 'aar')
 //    implementation 'ai.devsupport.instamojo:instamojolib:0.1.6'
 
     androidTestImplementation('androidx.test.espresso:espresso-core:3.1.0', {

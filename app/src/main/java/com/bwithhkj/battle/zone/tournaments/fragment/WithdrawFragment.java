@@ -1,4 +1,4 @@
-package com.player.battle.world.tournaments.fragment;
+package com.bwithhkj.battle.zone.tournaments.fragment;
 
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -15,11 +15,11 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.player.battle.world.tournaments.HomeActivity;
-import com.player.battle.world.tournaments.JSONParser;
-import com.player.battle.world.tournaments.PrefManager;
-import com.player.battle.world.tournaments.R;
-import com.player.battle.world.tournaments.config.config;
+import com.bwithhkj.battle.zone.tournaments.HomeActivity;
+import com.bwithhkj.battle.zone.tournaments.JSONParser;
+import com.bwithhkj.battle.zone.tournaments.PrefManager;
+import com.bwithhkj.battle.zone.tournaments.R;
+import com.bwithhkj.battle.zone.tournaments.config.config;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -143,7 +143,7 @@ public class WithdrawFragment extends Fragment {
         if (withdrawalAmount >= 50) {
             return true;
         }
-        errorMessage.setText("Minimum withdrawal amount is ₹ 50.");
+        errorMessage.setText("Minimum withdrawal amount is Rs 50.");
         errorMessage.setTextColor(Color.parseColor("#ff0000"));
         errorMessage.setVisibility(View.VISIBLE);
         return false;

@@ -1,4 +1,4 @@
-package com.player.battle.world.tournaments;
+package com.bwithhkj.battle.zone.tournaments;
 
 import android.app.Activity;
 import android.content.DialogInterface;
@@ -17,13 +17,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.widget.Toast;
 
-import com.player.battle.world.tournaments.config.config;
-import com.player.battle.world.tournaments.fragment.OngoingFragment;
-import com.player.battle.world.tournaments.fragment.ResultFragment;
-import com.player.battle.world.tournaments.fragment.PlayFragment;
-import com.player.battle.world.tournaments.fragment.ProfileFragment;
-import com.player.battle.world.tournaments.fragment.EarnFragment;
-import com.player.battle.world.tournaments.helper.BottomNavigationBehavior;
+import com.bwithhkj.battle.zone.tournaments.config.config;
+import com.bwithhkj.battle.zone.tournaments.fragment.OngoingFragment;
+import com.bwithhkj.battle.zone.tournaments.fragment.ResultFragment;
+import com.bwithhkj.battle.zone.tournaments.fragment.PlayFragment;
+import com.bwithhkj.battle.zone.tournaments.fragment.ProfileFragment;
+import com.bwithhkj.battle.zone.tournaments.fragment.EarnFragment;
+import com.bwithhkj.battle.zone.tournaments.helper.BottomNavigationBehavior;
 
 import org.json.JSONException;
 import org.json.JSONObject;

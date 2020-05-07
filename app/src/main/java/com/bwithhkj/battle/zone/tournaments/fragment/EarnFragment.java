@@ -1,4 +1,4 @@
-package com.player.battle.world.tournaments.fragment;
+package com.bwithhkj.battle.zone.tournaments.fragment;
 
 import android.content.Context;
 import android.content.Intent;
@@ -12,9 +12,9 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.player.battle.world.tournaments.PrefManager;
-import com.player.battle.world.tournaments.R;
-import com.player.battle.world.tournaments.config.config;
+import com.bwithhkj.battle.zone.tournaments.PrefManager;
+import com.bwithhkj.battle.zone.tournaments.R;
+import com.bwithhkj.battle.zone.tournaments.config.config;
 
 public class EarnFragment extends Fragment {
 

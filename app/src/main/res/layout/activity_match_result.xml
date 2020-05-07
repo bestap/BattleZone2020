@@ -99,7 +99,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="10.0dip"
                                 android:fontFamily="@font/muli_bold"
-                                android:text="₹ 500"
+                                android:text="Rs 500"
                                 android:textColor="@color/darkBlue"
                                 android:textSize="15.0sp" />
                         </LinearLayout>
@@ -126,7 +126,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="10.0dip"
                                 android:fontFamily="@font/muli_bold"
-                                android:text="₹ 10"
+                                android:text="Rs 10"
                                 android:textColor="@color/darkBlue"
                                 android:textSize="15.0sp" />
                         </LinearLayout>
@@ -153,7 +153,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="10.0dip"
                                 android:fontFamily="@font/muli_bold"
-                                android:text="₹ 50"
+                                android:text="Rs 50"
                                 android:textColor="@color/darkBlue"
                                 android:textSize="15.0sp" />
                         </LinearLayout>

@@ -1,4 +1,4 @@
-package com.player.battle.world.tournaments;
+package com.bwithhkj.battle.zone.tournaments;
 
 import android.app.ProgressDialog;
 import android.os.AsyncTask;
@@ -11,9 +11,9 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.appcompat.widget.Toolbar;
 import android.widget.Toast;
 
-import com.player.battle.world.tournaments.adapter.TopPlayerAdapter;
-import com.player.battle.world.tournaments.config.config;
-import com.player.battle.world.tournaments.data.TopPlayer;
+import com.bwithhkj.battle.zone.tournaments.adapter.TopPlayerAdapter;
+import com.bwithhkj.battle.zone.tournaments.config.config;
+import com.bwithhkj.battle.zone.tournaments.data.TopPlayer;
 
 import org.json.JSONArray;
 import org.json.JSONException;

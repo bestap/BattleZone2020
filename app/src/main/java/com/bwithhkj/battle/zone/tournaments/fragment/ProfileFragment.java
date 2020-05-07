@@ -1,4 +1,4 @@
-package com.player.battle.world.tournaments.fragment;
+package com.bwithhkj.battle.zone.tournaments.fragment;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -12,13 +12,13 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.player.battle.world.tournaments.EditProfileActivity;
-import com.player.battle.world.tournaments.LoginActivity;
-import com.player.battle.world.tournaments.MyWalletActivity;
-import com.player.battle.world.tournaments.PrefManager;
-import com.player.battle.world.tournaments.R;
-import com.player.battle.world.tournaments.TopPlayersActivity;
-import com.player.battle.world.tournaments.config.config;
+import com.bwithhkj.battle.zone.tournaments.EditProfileActivity;
+import com.bwithhkj.battle.zone.tournaments.LoginActivity;
+import com.bwithhkj.battle.zone.tournaments.MyWalletActivity;
+import com.bwithhkj.battle.zone.tournaments.PrefManager;
+import com.bwithhkj.battle.zone.tournaments.R;
+import com.bwithhkj.battle.zone.tournaments.TopPlayersActivity;
+import com.bwithhkj.battle.zone.tournaments.config.config;
 
 public class ProfileFragment extends Fragment {
 
@@ -124,7 +124,7 @@ public class ProfileFragment extends Fragment {
         total_amount_won = prf.getString(TAG_WONAMOUNT);
         myname.setText(name);
         myusername.setText(username);
-        myBalance.setText("₹ "+balance);
+        myBalance.setText("Rs "+balance);
         myMatchesNumber.setText(matches_played);
         myAmountWon.setText(total_amount_won);
         myKills.setText(total_kills);

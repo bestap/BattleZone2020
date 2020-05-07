@@ -1,4 +1,4 @@
-package com.player.battle.world.tournaments.adapter;
+package com.bwithhkj.battle.zone.tournaments.adapter;
 
 import android.graphics.Typeface;
 import androidx.recyclerview.widget.RecyclerView;
@@ -7,8 +7,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.player.battle.world.tournaments.R;
-import com.player.battle.world.tournaments.data.TopPlayer;
+import com.bwithhkj.battle.zone.tournaments.R;
+import com.bwithhkj.battle.zone.tournaments.data.TopPlayer;
 
 import java.util.List;
 
@@ -53,7 +53,7 @@ public class TopPlayerAdapter extends RecyclerView.Adapter<TopPlayerAdapter.MyVi
             holder.name.setText(topPlayer.getPlayerName());
 
             StringBuilder stringBuilder = new StringBuilder();
-            stringBuilder.append("₹ ");
+            stringBuilder.append("Rs ");
             stringBuilder.append(topPlayer.getPlayerWinning());
             holder.winning.setText(stringBuilder.toString());
             return;
@@ -65,7 +65,7 @@ public class TopPlayerAdapter extends RecyclerView.Adapter<TopPlayerAdapter.MyVi
         holder.name.setTypeface(null, Typeface.BOLD);
 
         StringBuilder stringBuilder2 = new StringBuilder();
-        stringBuilder2.append("₹ ");
+        stringBuilder2.append("Rs ");
         stringBuilder2.append(topPlayer.getPlayerWinning());
         holder.winning.setText(stringBuilder2.toString());
         holder.winning.setTypeface(null, Typeface.BOLD);

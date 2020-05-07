@@ -1,4 +1,4 @@
-package com.player.battle.world.tournaments.data;
+package com.bwithhkj.battle.zone.tournaments.data;
 
 public class Play {
 
