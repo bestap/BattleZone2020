@@ -65,6 +65,7 @@
                 android:textColor="#ffffffff"
                 android:textSize="45.0sp" />
         </LinearLayout>
+
     </LinearLayout>
 
     <com.google.android.material.tabs.TabLayout

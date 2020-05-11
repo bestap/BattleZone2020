@@ -18,7 +18,7 @@
             android:layout_gravity="center"
             android:layout_marginBottom="30.0dip"
             android:fontFamily="@font/muli_extrabold"
-            android:text="Withdraw to Esewa"
+            android:text="Withdraw to Khalti"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
             android:textColor="@color/mainblue" />
 
@@ -47,7 +47,7 @@
                     android:layout_gravity="center"
                     android:layout_marginLeft="10.0dip"
                     android:fontFamily="@font/muli"
-                    android:hint="Esewa Number"
+                    android:hint="Khalti Registered Number"
                     android:inputType="number"
                     android:maxLength="10"
                     android:paddingLeft="5.0dip"

@@ -1,5 +1,6 @@
 package com.bwithhkj.battle.zone.tournaments.fragment;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
@@ -10,9 +11,11 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.bwithhkj.battle.zone.tournaments.JoinMatchConfirmationActivity;
 import com.bwithhkj.battle.zone.tournaments.MyWalletActivity;
 import com.bwithhkj.battle.zone.tournaments.PrefManager;
 import com.bwithhkj.battle.zone.tournaments.R;
+import com.bwithhkj.battle.zone.tournaments.khalti;
 
 
 public class AddMoneyFragment extends Fragment {
@@ -78,14 +81,19 @@ public class AddMoneyFragment extends Fragment {
 //                        }
 
                         if (paymentGateway.equals("paytm")) {
-                            ((MyWalletActivity) getActivity()).PaytmAddMoney(email, number, obj, "Add Money to Wallet", name);
+                           // ((MyWalletActivity) getActivity()).PaytmAddMoney(email, number, obj, "Add Money to Wallet", name);
+
+                            Intent intent = new Intent(getActivity(), khalti.class);
+                            intent.putExtra("Amount",obj);
+                            startActivity(intent);
+
                         }
                     }
-                } else if (obj.isEmpty()) {
+                }/* else if (obj.isEmpty()) {
                     errorMessage.setVisibility(View.VISIBLE);
                     errorMessage.setText("Enter minimum Rs 20");
                     errorMessage.setTextColor(Color.parseColor("#ff0000"));
-                }
+                }*/
             }
         });
 

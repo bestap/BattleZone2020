@@ -21,6 +21,9 @@ public class config {
 
     public static final String youtubechannel = "https://www.youtube.com/channel/UCdpJGUXdR6mUyLCZ9AbC-Sg";
 
+    //khalti
+    public static final String merchant_public_key = "test_public_key_9deddef8d236407bab0554cf3835907f";
+
     // Paytm
     // Test API Details
 //    public static String MID = "EJHiMn10015192456115";

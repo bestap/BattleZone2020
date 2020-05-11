@@ -81,7 +81,7 @@ public class MyWalletActivity extends AppCompatActivity implements PaytmPaymentT
     //Prefrance
     private static PrefManager prf;
 
-    //paytm
+    ///*//*/paytm
     private String paytmemail;
     private String paytmphone;
     private String paytmamount;
@@ -99,19 +99,7 @@ public class MyWalletActivity extends AppCompatActivity implements PaytmPaymentT
     private String instatoken;
     private String instapaymentid;
     private String instatxnid;
-
-    private int success;
-
-/*
-    //esewa
-    private static final String CONFIG_ENVIRONMENT = ESewaConfiguration.ENVIRONMENT_TEST;
-    private static final int REQUEST_CODE_PAYMENT = 1;
-    private ESewaConfiguration eSewaConfiguration;
-
-    private static final String MERCHANT_ID = "JB0BBQ4aD0UqIThFJwAKBgAXEUkEGQUBBAwdOgABHD4DChwUAB0R";
-    private static final String MERCHANT_SECRET_KEY = "BhwIWQQADhIYSxILExMcAgFXFhcOBwAKBgAXEQ==";*/
-
-
+   private int success;
 
 
     public void PaytmAddMoney(String email, String phone, String amount, String purpose, String buyername) {
@@ -292,68 +280,11 @@ public class MyWalletActivity extends AppCompatActivity implements PaytmPaymentT
         Toast.makeText(getApplicationContext(), "Transaction Cancelled" + inResponse.toString(), Toast.LENGTH_LONG).show();
     }
 
-//    public void callInstamojoPay(String email, String phone, String amount, String purpose, String buyername) {
-//        final Activity activity = this;
-//        instamojoPay = new InstamojoPay();
-//        IntentFilter filter = new IntentFilter("ai.devsupport.instamojo");
-//        registerReceiver(instamojoPay, filter);
-//        JSONObject pay = new JSONObject();
-//        try {
-//            pay.put("email", email);
-//            pay.put("phone", phone);
-//            pay.put("purpose", purpose);
-//            addamount=amount;
-//            pay.put("amount", amount);
-//            pay.put("name", buyername);
-//            pay.put("send_sms", true);
-//            pay.put("send_email", true);
-//        } catch (JSONException e) {
-//            e.printStackTrace();
-//            System.out.println("Rjn_instamojo_error"+e.getMessage());
-//        }
-//        initListener();
-//        instamojoPay.start(activity, pay, listener);
-//    }
-//
-//    private void initListener() {
-//        listener = new InstapayListener() {
-//            @Override
-//            public void onSuccess(String response) {
-//                System.out.println("Rjn_payment"+response);
-//
-//                String[] str = response.split(":");
-//                String[] split = str[1].split("=");
-//                instaorderid = split[1];
-//                split = str[2].split("=");
-//                instatxnid = split[1];
-//                split = str[3].split("=");
-//                instapaymentid = split[1];
-//                str = str[4].split("=");
-//                instatoken = str[1];
-//
-//                // Loading jsonarray in Background Thread
-//                new OneLoadAllProducts().execute();
-//            }
-//
-//            @Override
-//            public void onFailure(int code, String reason) {
-//                System.out.println("Rjn_payment_error"+"code:"+code+"reason:"+reason);
-//                Toast.makeText(getApplicationContext(), "Failed: " + reason, Toast.LENGTH_LONG)
-//                        .show();
-//            }
-//        };
-//    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_wallet);
-
-        /*//esewa init
-        eSewaConfiguration = new ESewaConfiguration()
-                .clientId(MERCHANT_ID)
-                .secretKey(MERCHANT_SECRET_KEY)
-                .environment(CONFIG_ENVIRONMENT);*/
 
 
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
@@ -452,7 +383,7 @@ public class MyWalletActivity extends AppCompatActivity implements PaytmPaymentT
 
             try {
                 // Checking for SUCCESS TAG
-                success = json.getInt(TAG_SUCCESS);
+               success = json.getInt(TAG_SUCCESS);
 
             } catch (JSONException e) {
                 e.printStackTrace();
