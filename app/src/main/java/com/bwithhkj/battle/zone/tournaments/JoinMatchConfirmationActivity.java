@@ -165,7 +165,7 @@ public class JoinMatchConfirmationActivity extends AppCompatActivity {
         protected String doInBackground(String... args) {
             // Building Parameters
             Map<String, String> params = new HashMap<>();
-            System.out.println("Rjn_join_match"+matchID+Integer.toString(fee));
+           // System.out.println("Rjn_join_match"+ matchID+ Integer.toString(fee));
             params.put(TAG_USERID, prf.getString(TAG_USERID));
             params.put(TAG_USERNAME, prf.getString(TAG_USERNAME));
             params.put(TAG_MATCHID, matchID);
