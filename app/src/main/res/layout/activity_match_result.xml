@@ -46,7 +46,7 @@
                             android:layout_marginRight="5.0dip"
                             android:fontFamily="@font/muli_black"
                             android:gravity="center"
-                            android:text="PUBG Mobile Match Title"
+                            android:text="Mobile Match Title"
                             android:textColor="@color/darkBlue" />
 
                         <TextView

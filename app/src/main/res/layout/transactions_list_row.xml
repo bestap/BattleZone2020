@@ -50,7 +50,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="start"
                     android:fontFamily="@font/lato"
-                    android:text="PUBG Mobile Match #35"
+                    android:text="Match #35"
                     android:textSize="15.0sp"
                     android:textStyle="bold" />
 

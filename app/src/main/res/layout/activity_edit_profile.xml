@@ -132,7 +132,7 @@
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/lato"
-                        android:hint="PUBG Username"
+                        android:hint="Username in PUBG acc"
                         android:inputType="textPersonName"
                         android:maxLength="20"
                         android:paddingLeft="7.0dip"

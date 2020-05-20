@@ -190,7 +190,7 @@
                 android:layout_marginTop="10.0dip"
                 android:layout_marginRight="5.0dip"
                 android:fontFamily="@font/muli_extrabold"
-                android:text="PUBG Mobile Match #35"
+                android:text="Match #35"
                 android:textColor="@color/blueRandom"
                 android:textSize="15.0sp" />
 

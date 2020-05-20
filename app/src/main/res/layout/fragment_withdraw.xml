@@ -16,9 +16,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginBottom="30.0dip"
+            android:layout_marginBottom="10.0dip"
             android:fontFamily="@font/muli_extrabold"
             android:text="Withdraw to Khalti"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="@color/mainblue" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30.0dip"
+            android:fontFamily="@font/muli_extrabold"
+            android:text="or Contact us via facabook"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
             android:textColor="@color/mainblue" />
 

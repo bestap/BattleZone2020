@@ -95,7 +95,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/muli_extrabold"
-                            android:text="PUBG Mobile Match #1"
+                            android:text="Match #1"
                             android:textColor="@color/mainblue"
                             android:textSize="17.0sp" />
 
