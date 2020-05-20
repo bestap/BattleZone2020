@@ -1,7 +1,6 @@
 package com.bwithhkj.battle.zone.tournaments.fragment;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
@@ -11,11 +10,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.bwithhkj.battle.zone.tournaments.JoinMatchConfirmationActivity;
-import com.bwithhkj.battle.zone.tournaments.MyWalletActivity;
+import com.bwithhkj.battle.zone.tournaments.Integrationforkhalti;
 import com.bwithhkj.battle.zone.tournaments.PrefManager;
 import com.bwithhkj.battle.zone.tournaments.R;
-import com.bwithhkj.battle.zone.tournaments.khalti;
 
 
 public class AddMoneyFragment extends Fragment {
@@ -83,7 +80,7 @@ public class AddMoneyFragment extends Fragment {
                         if (paymentGateway.equals("paytm")) {
                            // ((MyWalletActivity) getActivity()).PaytmAddMoney(email, number, obj, "Add Money to Wallet", name);
 
-                            Intent intent = new Intent(getActivity(), khalti.class);
+                            Intent intent = new Intent(getActivity(), Integrationforkhalti.class);
                             intent.putExtra("Amount",obj);
                             startActivity(intent);
 

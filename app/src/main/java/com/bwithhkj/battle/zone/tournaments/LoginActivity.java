@@ -22,6 +22,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
+import static com.bwithhkj.battle.zone.tournaments.Md5.md5;
+
 public class LoginActivity extends AppCompatActivity {
 
     // Progress Dialog
@@ -156,7 +158,7 @@ public class LoginActivity extends AppCompatActivity {
             // Building Parameters
             Map<String, String> params = new HashMap<>();
             params.put(TAG_USERNAME, username.getText().toString());
-            params.put(TAG_PASSWORD, password.getText().toString());
+            params.put(TAG_PASSWORD, md5(password.getText().toString()));
 
             // getting JSON string from URL
             JSONObject json = jsonParser.makeHttpRequest(url, "POST", params);

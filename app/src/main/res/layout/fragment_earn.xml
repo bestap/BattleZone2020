@@ -81,7 +81,7 @@
                     android:layout_marginRight="10.0dip"
                     android:fontFamily="@font/muli"
                     android:gravity="center"
-                    android:text="Invite your friends and Earn Huge Cash. Your friend Get Rs.5 sign up bonus and you get Rs.10 invite bonus when they join first match."
+                    android:text="Invite your friends and Earn Huge Cash. Your friend Get Rs.5 sign up bonus and you get Rs.5 invite bonus when they join first match."
                     android:textColor="#ffffffff"
                     android:textSize="15.0sp" />
             </LinearLayout>
@@ -111,7 +111,7 @@
                     android:background="@drawable/dotted_border"
                     android:fontFamily="@font/muli_semibold"
                     android:padding="15.0dip"
-                    android:text="playerzon"
+                    android:text="battlezon"
                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
                     android:textColor="#ff000000"
                     android:textIsSelectable="true"

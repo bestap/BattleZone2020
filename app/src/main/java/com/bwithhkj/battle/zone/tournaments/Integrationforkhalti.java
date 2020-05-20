@@ -2,20 +2,16 @@ package com.bwithhkj.battle.zone.tournaments;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.viewpager.widget.ViewPager;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
-import android.widget.LinearLayout;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bwithhkj.battle.zone.tournaments.config.config;
 import com.google.android.material.button.MaterialButton;
-import com.google.android.material.tabs.TabLayout;
 import com.khalti.checkout.helper.Config;
 import com.khalti.checkout.helper.KhaltiCheckOut;
 import com.khalti.checkout.helper.OnCheckOutListener;
@@ -36,7 +32,7 @@ import butterknife.OnClick;
 
 import static com.bwithhkj.battle.zone.tournaments.config.config.merchant_public_key;
 
-public class khalti extends AppCompatActivity {
+public class Integrationforkhalti extends AppCompatActivity {
     @BindView(R.id.kbPay)
     KhaltiButton khaltiButton;
     @BindView(R.id.btnMore)
@@ -96,7 +92,7 @@ public class khalti extends AppCompatActivity {
 
 
 
-        prf = new PrefManager(khalti.this);
+        prf = new PrefManager(Integrationforkhalti.this);
         final int min = 1000;
         final int max = 10000;
         final int random = new Random().nextInt((max - min) + 1) + min;
@@ -267,7 +263,7 @@ public class khalti extends AppCompatActivity {
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
-            pDialog = new ProgressDialog(khalti.this);
+            pDialog = new ProgressDialog(Integrationforkhalti.this);
             pDialog.setMessage("Loading Please wait...");
             pDialog.setIndeterminate(true);
             pDialog.setCancelable(false);
@@ -347,15 +343,15 @@ public class khalti extends AppCompatActivity {
                         int bal = Integer.parseInt(prf.getString(TAG_USERBALANCE))+ i;
                         prf.setString(TAG_USERBALANCE,Integer.toString(bal));
 
-                        Intent intent = new Intent(khalti.this, HomeActivity.class);
+                        Intent intent = new Intent(Integrationforkhalti.this, HomeActivity.class);
                         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                         startActivity(intent);
 
 
-                        Toast.makeText(khalti.this,"Payment done. Now join match",Toast.LENGTH_LONG).show();
+                        Toast.makeText(Integrationforkhalti.this,"Payment done. Now join match",Toast.LENGTH_LONG).show();
 
                     } else {
-                        Toast.makeText(khalti.this,"Something went wrong. Try again!",Toast.LENGTH_LONG).show();
+                        Toast.makeText(Integrationforkhalti.this,"Something went wrong. Try again!",Toast.LENGTH_LONG).show();
 
                     }
 

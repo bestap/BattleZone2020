@@ -22,7 +22,7 @@ public class config {
     public static final String youtubechannel = "https://www.youtube.com/channel/UCdpJGUXdR6mUyLCZ9AbC-Sg";
 
     //khalti
-    public static final String merchant_public_key = "test_public_key_9deddef8d236407bab0554cf3835907f";
+    public static final String merchant_public_key = "live_public_key_c737ca297ab2422e951c9ff0ed8f4e6f";
 
     // Paytm
     // Test API Details

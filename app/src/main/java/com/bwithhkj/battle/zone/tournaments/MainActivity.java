@@ -21,6 +21,8 @@ import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import static com.bwithhkj.battle.zone.tournaments.Md5.md5;
+
 public class MainActivity extends AppCompatActivity {
 
     // Progress Dialog
@@ -28,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
     // Creating JSON Parser object
     private final JSONParser jsonParser = new JSONParser();
+    //private Md5 encrypt;
 
     // url to get all products list
     private static final String url = config.mainurl + "create_user.php";
@@ -180,7 +183,7 @@ public class MainActivity extends AppCompatActivity {
             params.put(TAG_PUBGUSERNAME, pubgusername.getText().toString().trim());
             params.put(TAG_EMAIL, email.getText().toString().trim());
             params.put(TAG_MOBILE, mobile.getText().toString().trim());
-            params.put(TAG_PASSWORD, password.getText().toString().trim());
+            params.put(TAG_PASSWORD, md5(password.getText().toString().trim()));
             params.put(TAG_OTHER, "");
             params.put(TAG_PROMOCODE, promocode.getText().toString().trim());
 

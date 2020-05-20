@@ -156,7 +156,7 @@ public class ResultAdapter extends RecyclerView.Adapter<ResultAdapter.MyViewHold
             Glide.with(ctx).load(img).placeholder(R.drawable.wp).centerCrop().crossFade().diskCacheStrategy(DiskCacheStrategy.ALL).into(holder.topImage);
         }
         if (Integer.parseInt(play.getJoin_status()) == 0) {
-            holder.joinBtn.setText("Not Join");
+            holder.joinBtn.setText("Not Joinned");
         } else if (Integer.parseInt(play.getJoin_status()) == 1) {
             holder.joinBtn.setText("Joinned");
         }

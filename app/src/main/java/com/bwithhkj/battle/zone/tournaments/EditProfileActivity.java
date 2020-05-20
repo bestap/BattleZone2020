@@ -23,6 +23,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
+import static com.bwithhkj.battle.zone.tournaments.Md5.md5;
+
 public class EditProfileActivity extends AppCompatActivity {
 
     // Progress Dialog
@@ -343,8 +345,8 @@ public class EditProfileActivity extends AppCompatActivity {
             Map<String, String> params = new HashMap<>();
             params.put(TAG_USERID, prf.getString(TAG_USERID));
             params.put(TAG_USERNAME, prf.getString(TAG_USERNAME));
-            params.put(TAG_PASSWORD, newPass.getText().toString());
-            params.put(TAG_OLDPASSWORD, oldPass.getText().toString());
+            params.put(TAG_PASSWORD, md5(newPass.getText().toString()));
+            params.put(TAG_OLDPASSWORD, md5(oldPass.getText().toString()));
 
             // getting JSON string from URL
             JSONObject json = jsonParser.makeHttpRequest(urlresetpassword, "POST", params);

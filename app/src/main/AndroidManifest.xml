@@ -19,7 +19,7 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning"
         tools:targetApi="n">
-        <activity android:name=".khalti"></activity>
+        <activity android:name=".Integrationforkhalti"></activity>
         <activity android:name=".helper.khaltipayment" />
         <activity android:name=".AppUpdaterActivity" />
         <activity android:name=".TopPlayersActivity" />
