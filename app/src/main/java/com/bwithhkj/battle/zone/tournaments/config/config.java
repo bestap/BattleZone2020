@@ -3,23 +3,16 @@ package com.bwithhkj.battle.zone.tournaments.config;
 public class config {
 
     public static final String main = "http://battlezone123.000webhostapp.com/";
-//    public static String mainurl = "http://www.battleworld.in/play/";
     public static final String mainurl = "http://battlezone123.000webhostapp.com/battleworld/";
     public static final String mainimg = mainurl + "matchimg/";
     public static final String howtojoin = "http://battlezone123.000webhostapp.com/";
     public static final String privacypolicy = "http://battlezone123.000webhostapp.com/";
     public static final String paytmchecksum = mainurl + "paytm/";
 
-   /* public static final String main = "http://192.168.56.1/";
-    //    public static String mainurl = "http://www.battleworld.in/play/";
-    public static final String mainurl = "http://192.168.56.1/battleworld/";
-    public static final String mainimg = mainurl + "matchimg/";
-    public static final String howtojoin = "http://192.168.56.1/";
-    public static final String privacypolicy = "http://192.168.56.1/";
-    public static final String paytmchecksum = mainurl + "paytm/";*/
 
 
     public static final String youtubechannel = "https://www.youtube.com/channel/UCdpJGUXdR6mUyLCZ9AbC-Sg";
+    public static final String fbpage = "https://www.facebook.com/pg/NepGamingTournament";
 
     //khalti
     public static final String merchant_public_key = "live_public_key_c737ca297ab2422e951c9ff0ed8f4e6f";

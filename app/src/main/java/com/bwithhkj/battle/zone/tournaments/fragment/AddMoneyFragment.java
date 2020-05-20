@@ -1,6 +1,8 @@
 package com.bwithhkj.battle.zone.tournaments.fragment;
 
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.net.Uri;
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
@@ -9,10 +11,12 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.content.pm.PackageManager;
 
 import com.bwithhkj.battle.zone.tournaments.Integrationforkhalti;
 import com.bwithhkj.battle.zone.tournaments.PrefManager;
 import com.bwithhkj.battle.zone.tournaments.R;
+import com.bwithhkj.battle.zone.tournaments.config.config;
 
 
 public class AddMoneyFragment extends Fragment {
@@ -23,7 +27,7 @@ public class AddMoneyFragment extends Fragment {
     private static final String TAG_EMAIL = "email";
     private static final String TAG_MOBILE = "mobile";
 
-    private Button addmoney;
+    private Button addmoney, contactFacebook;
     private EditText amount;
     private String email;
     private TextView errorMessage;
@@ -46,6 +50,7 @@ public class AddMoneyFragment extends Fragment {
         prf = new PrefManager(getActivity());
     }
 
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -54,6 +59,7 @@ public class AddMoneyFragment extends Fragment {
 
         amount = (EditText) rootViewone.findViewById(R.id.amountEditText);
         addmoney = (Button) rootViewone.findViewById(R.id.addButton);
+        contactFacebook = (Button) rootViewone.findViewById(R.id.contactFacebook);
         errorMessage = (TextView) rootViewone.findViewById(R.id.errorMessage);
 
         username = prf.getString(TAG_USERNAME);
@@ -93,6 +99,39 @@ public class AddMoneyFragment extends Fragment {
                 }*/
             }
         });
+        contactFacebook.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+               //add fb page
+                PackageManager pm = getActivity().getPackageManager();
+                Intent intent = pm.getLaunchIntentForPackage("com.facebook.katana");
+                Intent intentlite = pm.getLaunchIntentForPackage("com.facebook.lite");
+                try {
+                    if (intent != null) {
+                        intent = new Intent(Intent.ACTION_VIEW);
+                        intent.setData(Uri.parse(config.fbpage));
+                        startActivity(intent);
+                    } else if (intentlite != null) {
+                        intent = new Intent(Intent.ACTION_VIEW);
+                        intent.setData(Uri.parse(config.fbpage));
+                        startActivity(intent);
+
+                    } else {
+                        // Bring user to the market or let them choose an app?
+                        intent = new Intent(Intent.ACTION_VIEW);
+                        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        intent.setData(Uri.parse("market://details?id=" + "com.facebook.katana"));
+                        if (intent != null) {
+                            startActivity(intent);
+                        }
+                    }
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+
+
 
         return rootViewone;
     }

@@ -172,10 +172,17 @@ public class ProfileFragment extends Fragment {
             }
         });
         customerSupport.setOnClickListener(new View.OnClickListener() {
-            @Override
+           /* @Override
             public void onClick(View v) {
                 Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(config.main));
                 startActivity(browserIntent);
+            }*/
+
+            public void onClick(View v) {
+                Intent in = new Intent("android.intent.action.SEND");
+                in.setType("text/plain");
+                String string = "https://m.facebook.com/NepGaming-Tournament-103082241421805/";
+                startActivity(Intent.createChooser(in, "Share using"));
             }
         });
 

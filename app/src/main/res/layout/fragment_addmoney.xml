@@ -12,6 +12,18 @@
         android:layout_marginRight="20.0dip"
         android:orientation="vertical">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/muli_bold"
+            android:paddingLeft="15.0dip"
+            android:text="Due to lockdown, we prefer you contact us via facebook to add payment"
+            android:textAlignment="center"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textSize="20.0dip" />
+
+
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
@@ -73,6 +85,19 @@
             android:fontFamily="@font/muli_semibold"
             android:foreground="?android:selectableItemBackground"
             android:text="ADD"
+            android:textColor="#ffffffff"
+            android:textSize="18.0sp" />
+        <Button
+            android:id="@+id/contactFacebook"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25.0dip"
+            android:background="#3b5998"
+            android:clickable="true"
+            android:fontFamily="@font/roboto_medium"
+            android:foreground="?android:selectableItemBackground"
+            android:text="Contact via Facebook"
             android:textColor="#ffffffff"
             android:textSize="18.0sp" />
     </LinearLayout>
