@@ -140,13 +140,13 @@ public class WithdrawFragment extends Fragment {
 
     private boolean validateWithdrawalAmount() {
         if (withdrawalAmount > Integer.parseInt(availableBalance)) {
-            errorMessage.setText("withdrawal amount is greater than Available balance");
+            errorMessage.setText("Withdrawal amount is greater than Available balance");
             errorMessage.setTextColor(Color.parseColor("#ff0000"));
             errorMessage.setVisibility(View.VISIBLE);
             return false;
         }
-        if (matches_played > 0) {
-            errorMessage.setText("You should play atleast one tournament to withdraw");
+        if (matches_played <= 0) {
+            errorMessage.setText("You should play at least one tournament to withdraw balance.");
             errorMessage.setTextColor(Color.parseColor("#ff0000"));
             errorMessage.setVisibility(View.VISIBLE);
             return false;

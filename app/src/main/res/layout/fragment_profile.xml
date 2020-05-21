@@ -127,11 +127,50 @@
                         android:layout_height="fill_parent"
                         android:weightSum="3.0">
 
+
+                        <LinearLayout
+                            android:id="@+id/totalKillsLL"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1.0"
+                            android:clickable="true"
+                            android:foreground="?android:selectableItemBackground"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/myKills"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/muli_semibold"
+                                android:text="236"
+                                android:textColor="#ff3796bc"
+                                android:textSize="23sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5.0dip"
+                                android:fontFamily="@font/muli_bold"
+                                android:gravity="center"
+                                android:text="Total Kills"
+                                android:textSize="13.0sp" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="2.0dip"
+                            android:layout_height="fill_parent"
+                            android:layout_marginTop="20.0dip"
+                            android:layout_marginBottom="20.0dip"
+                            android:background="#ffb7b7bd" />
+
                         <LinearLayout
                             android:id="@+id/matchesPlayedLL"
                             android:layout_width="fill_parent"
                             android:layout_height="fill_parent"
                             android:layout_weight="1.0"
+
                             android:clickable="true"
                             android:foreground="?android:selectableItemBackground"
                             android:gravity="center"
@@ -151,48 +190,11 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="5.0dip"
+                                android:layout_marginTop="0.0dip"
                                 android:fontFamily="@font/muli_bold"
                                 android:gravity="center"
-                                android:text="Matches Played"
-                                android:textSize="13.0sp" />
-                        </LinearLayout>
-
-                        <View
-                            android:layout_width="2.0dip"
-                            android:layout_height="fill_parent"
-                            android:layout_marginTop="20.0dip"
-                            android:layout_marginBottom="20.0dip"
-                            android:background="#ffb7b7bd" />
-
-                        <LinearLayout
-                            android:id="@+id/totalKillsLL"
-                            android:layout_width="fill_parent"
-                            android:layout_height="fill_parent"
-                            android:layout_weight="1.0"
-                            android:clickable="true"
-                            android:foreground="?android:selectableItemBackground"
-                            android:gravity="center"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:id="@+id/myKills"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:fontFamily="@font/muli_semibold"
-                                android:text="236"
-                                android:textColor="#ff3796bc"
-                                android:textSize="23.0sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="5.0dip"
-                                android:fontFamily="@font/muli_bold"
-                                android:gravity="center"
-                                android:text="Total Kills"
-                                android:textSize="13.0sp" />
+                                android:text="Tournaments Played"
+                                android:textSize="14.0dip" />
                         </LinearLayout>
 
                         <View

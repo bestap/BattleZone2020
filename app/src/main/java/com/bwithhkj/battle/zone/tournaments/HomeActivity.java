@@ -77,7 +77,18 @@ public class HomeActivity extends AppCompatActivity {
         loadFragment(new PlayFragment());
         navigation.setSelectedItemId(R.id.navigation_play);
 
-
+        final SwipeRefreshLayout pullToRefresh = findViewById(R.id.pullToRefresh);
+        pullToRefresh.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+               // if(frag)
+                // // your code
+                Intent intent = new Intent(HomeActivity.this,HomeActivity.class);
+                startActivity(intent);
+               // loadFragment(fragment);
+                pullToRefresh.setRefreshing(false);
+            }
+        });
 
 
     }

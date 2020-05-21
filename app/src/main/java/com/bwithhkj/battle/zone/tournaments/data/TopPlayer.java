@@ -12,7 +12,7 @@ public class TopPlayer {
 
     public TopPlayer(String playerName, String playerWinning, String position) {
         this.playerName = playerName;
-        this.playerWinning = playerWinning;
+        this.playerWinning = playerWinning+"0";
         this.position = position;
     }
 

@@ -7,7 +7,10 @@
     android:layout_height="match_parent">
 
 
-
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:id="@+id/pullToRefresh">
 
         <FrameLayout
             android:id="@+id/frame_container"
@@ -18,6 +21,8 @@
 
 
         </FrameLayout>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/navigation"

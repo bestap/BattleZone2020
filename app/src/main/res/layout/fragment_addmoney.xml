@@ -18,7 +18,7 @@
             android:layout_gravity="center"
             android:fontFamily="@font/muli_bold"
             android:paddingLeft="15.0dip"
-            android:text="Pay with khalti or any mobile banking"
+            android:text="Add Balance"
             android:textAlignment="center"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
             android:textSize="20.0dip" />
@@ -80,11 +80,25 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="25.0dip"
-            android:background="@color/jiosavanblue"
+            android:background="#5d2e8e"
             android:clickable="true"
             android:fontFamily="@font/muli_semibold"
             android:foreground="?android:selectableItemBackground"
-            android:text="ADD"
+            android:text="PAY WITH KHALTI"
+            android:textColor="#ffffffff"
+            android:textSize="18.0sp" />
+        <Button
+            android:id="@+id/addButtonesewa"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25.0dip"
+            android:background="@color/successGreen"
+            android:clickable="true"
+            android:visibility="gone"
+            android:fontFamily="@font/muli_semibold"
+            android:foreground="?android:selectableItemBackground"
+            android:text="PAY WITH ESEWA"
             android:textColor="#ffffffff"
             android:textSize="18.0sp" />
         <TextView

@@ -53,7 +53,7 @@ public class TopPlayerAdapter extends RecyclerView.Adapter<TopPlayerAdapter.MyVi
             holder.name.setText(topPlayer.getPlayerName());
 
             StringBuilder stringBuilder = new StringBuilder();
-            stringBuilder.append("Rs ");
+            stringBuilder.append(" ");
             stringBuilder.append(topPlayer.getPlayerWinning());
             holder.winning.setText(stringBuilder.toString());
             return;
@@ -65,7 +65,7 @@ public class TopPlayerAdapter extends RecyclerView.Adapter<TopPlayerAdapter.MyVi
         holder.name.setTypeface(null, Typeface.BOLD);
 
         StringBuilder stringBuilder2 = new StringBuilder();
-        stringBuilder2.append("Rs ");
+        stringBuilder2.append(" ");
         stringBuilder2.append(topPlayer.getPlayerWinning());
         holder.winning.setText(stringBuilder2.toString());
         holder.winning.setTypeface(null, Typeface.BOLD);
