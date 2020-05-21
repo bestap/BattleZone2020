@@ -14,6 +14,8 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
+
 import android.view.MenuItem;
 import android.widget.Toast;
 
@@ -74,6 +76,9 @@ public class HomeActivity extends AppCompatActivity {
 
         loadFragment(new PlayFragment());
         navigation.setSelectedItemId(R.id.navigation_play);
+
+
+
 
     }
 

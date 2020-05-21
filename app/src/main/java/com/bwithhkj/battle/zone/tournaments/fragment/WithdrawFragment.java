@@ -54,6 +54,9 @@ public class WithdrawFragment extends Fragment {
     //balance
     private static final String TAG_USERBALANCE = "balance";
 
+    private int matches_played;
+
+    private static final String TAG_TOTALMATCHPLAYED = "totalmatchplayed";
 
     // products JSONArray
     JSONArray jsonarray = null;
@@ -90,6 +93,8 @@ public class WithdrawFragment extends Fragment {
 
         // Hashmap for ListView
         offersList = new ArrayList<>();
+
+        matches_played = Integer.parseInt(prf.getString(TAG_TOTALMATCHPLAYED));
     }
 
     @Override
@@ -140,10 +145,16 @@ public class WithdrawFragment extends Fragment {
             errorMessage.setVisibility(View.VISIBLE);
             return false;
         }
-        if (withdrawalAmount >= 50) {
+        if (matches_played > 0) {
+            errorMessage.setText("You should play atleast one tournament to withdraw");
+            errorMessage.setTextColor(Color.parseColor("#ff0000"));
+            errorMessage.setVisibility(View.VISIBLE);
+            return false;
+        }
+        if (withdrawalAmount >= 50 ) {
             return true;
         }
-        errorMessage.setText("Minimum withdrawal amount is Rs 50.");
+        errorMessage.setText("Minimum withdraw balance is Rs 50.");
         errorMessage.setTextColor(Color.parseColor("#ff0000"));
         errorMessage.setVisibility(View.VISIBLE);
         return false;

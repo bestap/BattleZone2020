@@ -11,11 +11,11 @@ public class config {
 
 
 
-    public static final String youtubechannel = "https://www.youtube.com/channel/UCdpJGUXdR6mUyLCZ9AbC-Sg";
+    public static final String youtubechannel = "https://www.youtube.com/channel/UCP7wdak41Jd1p5lxs6I_QLQ";
     public static final String fbpage = "https://www.facebook.com/pg/NepGamingTournament";
 
     //khalti
-    public static final String merchant_public_key = "live_public_key_c737ca297ab2422e951c9ff0ed8f4e6f";
+    public static final String merchant_public_key = "live_public_key_098a9cba67214824bd601ecddca96b7f";
 
     // Paytm
     // Test API Details

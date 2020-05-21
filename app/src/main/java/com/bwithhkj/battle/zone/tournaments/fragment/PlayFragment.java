@@ -9,6 +9,8 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -68,6 +70,7 @@ public class PlayFragment extends Fragment {
     //playerjoinstatus
     private static final String TAG_PLAYERJOINSTATUS = "playerjoinstatus";
 
+
     //match
     private static final String TAG_MATCHID = "matchid";
     private static final String TAG_ROOMID = "roomid";
@@ -124,6 +127,8 @@ public class PlayFragment extends Fragment {
         return fragment;
     }
 
+ //   final SwipeRefreshLayout pullToRefresh = findViewById(R.id.pullToRefresh);
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -137,7 +142,12 @@ public class PlayFragment extends Fragment {
         offersListUser = new ArrayList<>();
 
         new OneLoadAllProducts().execute();
+
+
     }
+
+
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -195,8 +205,16 @@ public class PlayFragment extends Fragment {
             }
         }));
 
+
+
+
         return rootViewone;
+
+
+
     }
+
+
 
     public void onResume() {
         super.onResume();

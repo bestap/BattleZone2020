@@ -69,7 +69,6 @@ public class MainActivity extends AppCompatActivity {
         firstname = (EditText) findViewById(R.id.firstname);
         lastname = (EditText) findViewById(R.id.lastname);
         username = (EditText) findViewById(R.id.username);
-        pubgusername = (EditText) findViewById(R.id.pubgusername);
         email = (EditText) findViewById(R.id.email);
         mobile = (EditText) findViewById(R.id.mobileNumber);
         password = (EditText) findViewById(R.id.password);
@@ -138,10 +137,6 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(MainActivity.this, "Enter Username without any special characters", Toast.LENGTH_SHORT).show();
             username.requestFocus();
             return false;
-        } else if (pubgusername.getText().toString().trim().isEmpty()) {
-            Toast.makeText(MainActivity.this, "Enter Value for Pubg Username", Toast.LENGTH_SHORT).show();
-            pubgusername.requestFocus();
-            return false;
         } else if (mobile.getText().toString().trim().isEmpty()) {
             Toast.makeText(MainActivity.this, "Enter Value for Mobile", Toast.LENGTH_SHORT).show();
             mobile.requestFocus();
@@ -180,7 +175,7 @@ public class MainActivity extends AppCompatActivity {
             params.put(TAG_FIRSTNAME, firstname.getText().toString().trim());
             params.put(TAG_LASTNAME, lastname.getText().toString().trim());
             params.put(TAG_USERNAME, username.getText().toString().trim());
-            params.put(TAG_PUBGUSERNAME, pubgusername.getText().toString().trim());
+            params.put(TAG_PUBGUSERNAME, username.getText().toString().trim());
             params.put(TAG_EMAIL, email.getText().toString().trim());
             params.put(TAG_MOBILE, mobile.getText().toString().trim());
             params.put(TAG_PASSWORD, md5(password.getText().toString().trim()));

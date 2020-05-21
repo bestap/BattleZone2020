@@ -18,7 +18,7 @@
             android:layout_gravity="center"
             android:fontFamily="@font/muli_bold"
             android:paddingLeft="15.0dip"
-            android:text="Due to lockdown, we prefer you contact us via facebook to add payment"
+            android:text="Pay with khalti or any mobile banking"
             android:textAlignment="center"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
             android:textSize="20.0dip" />
@@ -87,12 +87,23 @@
             android:text="ADD"
             android:textColor="#ffffffff"
             android:textSize="18.0sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10.0dip"
+            android:fontFamily="@font/muli_bold"
+            android:paddingLeft="15.0dip"
+            android:text="or"
+            android:textAlignment="center"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textSize="26.0dip" />
         <Button
             android:id="@+id/contactFacebook"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="25.0dip"
+            android:layout_marginTop="10.0dip"
             android:background="#3b5998"
             android:clickable="true"
             android:fontFamily="@font/roboto_medium"

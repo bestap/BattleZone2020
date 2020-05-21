@@ -321,11 +321,12 @@
                             android:layout_width="fill_parent"
                             android:layout_height="30.0dip"
                             android:layout_gravity="center"
+                            android:elevation="5dp"
                             android:background="@drawable/playbuttonback"
                             android:clickable="true"
                             android:fontFamily="@font/muli_semibold"
                             android:foreground="?android:selectableItemBackground"
-                            android:text="Joined"
+                            android:text="MATCH DETAILS"
                             android:textColor="@color/jiosavanblue"
                             android:textSize="12.0sp" />
                     </LinearLayout>
