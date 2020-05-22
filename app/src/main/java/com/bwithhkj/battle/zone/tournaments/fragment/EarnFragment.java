@@ -20,7 +20,7 @@ public class EarnFragment extends Fragment {
 
     // JSON Node names
     private static final String TAG_SUCCESS = "success";
-    private static final String TAG_RAJANR = "rajanr";
+    private static final String TAG_rockR = "rockr";
 
     //user
     private static final String TAG_USERNAME = "username";

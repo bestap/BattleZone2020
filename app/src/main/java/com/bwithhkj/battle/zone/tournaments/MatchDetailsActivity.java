@@ -51,7 +51,7 @@ public class MatchDetailsActivity extends AppCompatActivity {
 
     // JSON Node names
     private static final String TAG_SUCCESS = "success";
-    private static final String TAG_RAJANR = "rajanr";
+    private static final String TAG_rockR = "rockr";
 
     //user
     private static final String TAG_USERID = "userid";
@@ -308,7 +308,7 @@ public class MatchDetailsActivity extends AppCompatActivity {
 
                 // jsonarray found
                 // Getting Array of jsonarray
-                jsonarray = json.getJSONArray(TAG_RAJANR);
+                jsonarray = json.getJSONArray(TAG_rockR);
 
                 // looping through All jsonarray
                 System.out.println("Rjn_jsonarray_size"+jsonarray.length());
@@ -461,7 +461,7 @@ public class MatchDetailsActivity extends AppCompatActivity {
                                 Glide.with(MatchDetailsActivity.this).load(img).placeholder(R.drawable.wp).centerCrop().crossFade().diskCacheStrategy(DiskCacheStrategy.ALL).into(topImage);
                             }
 
-                            //rajan
+                            //rock
                             int voidR = totalParticipants.isEmpty() ? 0 : Integer.parseInt(totalParticipants);
 
 
@@ -475,8 +475,8 @@ public class MatchDetailsActivity extends AppCompatActivity {
                                     //id pass layout make gone
                                     roomIDPassRL.setVisibility(View.GONE);
 
-                                    System.out.println("Rajan_voidR"+voidR);
-                                    System.out.println("Rajan_totalPlayer"+totalPlayer);
+                                 //   System.out.println("rock_voidR"+voidR);
+                                 //   System.out.println("rock_totalPlayer"+totalPlayer);
                                     if(voidR < Integer.parseInt(totalPlayer)) {
 
                                     } else {
@@ -621,7 +621,7 @@ public class MatchDetailsActivity extends AppCompatActivity {
 
                 // jsonarray found
                 // Getting Array of jsonarray
-                jsonarray = json.getJSONArray(TAG_RAJANR);
+                jsonarray = json.getJSONArray(TAG_rockR);
 
                 // looping through All jsonarray
                 for (int i = 0; i < jsonarray.length(); i++) {

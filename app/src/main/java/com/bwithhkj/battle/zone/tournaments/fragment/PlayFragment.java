@@ -49,8 +49,8 @@ public class PlayFragment extends Fragment {
 
     // JSON Node names
     private static final String TAG_SUCCESS = "success";
-    private static final String TAG_RAJANR = "rajanr";
-    private static final String TAG_RAJANRUSER = "rajanruser";
+    private static final String TAG_rockR = "rockr";
+    private static final String TAG_rockRUSER = "rockruser";
 
     //user
     private static final String TAG_USERID = "userid";
@@ -253,8 +253,8 @@ public class PlayFragment extends Fragment {
                 if(success==1) {
                     // jsonarray found
                     // Getting Array of jsonarray
-                    jsonarray = json.getJSONArray(TAG_RAJANR);
-                    jsonarrayuser = json.getJSONArray(TAG_RAJANRUSER);
+                    jsonarray = json.getJSONArray(TAG_rockR);
+                    jsonarrayuser = json.getJSONArray(TAG_rockRUSER);
 
                     // looping through All jsonarray
                     for (int i = 0; i < jsonarrayuser.length(); i++) {

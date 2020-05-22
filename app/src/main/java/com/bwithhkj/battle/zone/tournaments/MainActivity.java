@@ -107,7 +107,7 @@ public class MainActivity extends AppCompatActivity {
         boolean b = m.find();
 
         if (b)
-            System.out.println("Rajan_There is a special character in my string");
+            System.out.println("rock_There is a special character in my string");
 
         if (email.getText().toString().trim().isEmpty()) {
             Toast.makeText(MainActivity.this, "Enter Value for Email", Toast.LENGTH_SHORT).show();

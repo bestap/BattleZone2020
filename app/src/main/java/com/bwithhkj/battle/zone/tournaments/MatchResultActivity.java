@@ -47,8 +47,8 @@ public class MatchResultActivity extends AppCompatActivity {
 
     // JSON Node names
     private static final String TAG_SUCCESS = "success";
-    private static final String TAG_RAJANR = "rajanr";
-    private static final String TAG_RAJANRWON = "rajanrwon";
+    private static final String TAG_rockR = "rockr";
+    private static final String TAG_rockRWON = "rockrwon";
 
     //user
     private static final String TAG_USERID = "userid";
@@ -123,7 +123,7 @@ public class MatchResultActivity extends AppCompatActivity {
         perKill = (TextView) findViewById(R.id.perKill);
         entryFee = (TextView) findViewById(R.id.entryFee);
 
-        title.setText("PUBG Mobile Match#"+matchID);
+        title.setText("Match#"+matchID);
 
         //Input date in String format
         String input = matchDateTime;
@@ -268,8 +268,8 @@ public class MatchResultActivity extends AppCompatActivity {
                 if(success==1) {
                     // jsonarray found
                     // Getting Array of jsonarray
-                    jsonarray = json.getJSONArray(TAG_RAJANR);
-                    jsonarraywon = json.getJSONArray(TAG_RAJANRWON);
+                    jsonarray = json.getJSONArray(TAG_rockR);
+                    jsonarraywon = json.getJSONArray(TAG_rockRWON);
 
                     // looping through All jsonarray
                     for (int i = 0; i < jsonarraywon.length(); i++) {

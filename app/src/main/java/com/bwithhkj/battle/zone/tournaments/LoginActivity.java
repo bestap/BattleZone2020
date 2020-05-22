@@ -40,7 +40,7 @@ public class LoginActivity extends AppCompatActivity {
 
     // JSON Node names
     private static final String TAG_SUCCESS = "success";
-    private static final String TAG_RAJANR = "rajanr";
+    private static final String TAG_rockR = "rockr";
 
     //user
     private static final String TAG_USERID = "userid";
@@ -177,7 +177,7 @@ public class LoginActivity extends AppCompatActivity {
 
                 // jsonarray found
                 // Getting Array of jsonarray
-                jsonarray = json.getJSONArray(TAG_RAJANR);
+                jsonarray = json.getJSONArray(TAG_rockR);
 
                 // looping through All jsonarray
                 for (int i = 0; i < jsonarray.length(); i++) {

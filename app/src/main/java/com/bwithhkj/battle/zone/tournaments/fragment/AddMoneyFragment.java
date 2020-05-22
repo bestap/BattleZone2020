@@ -33,7 +33,7 @@ public class AddMoneyFragment extends Fragment {
     private TextView errorMessage;
     private String name;
     private String number;
-    private final String paymentGateway="paytm";
+    private final String paymentGateway="khalti";
     private String username;
 
     //Prefrance
@@ -66,7 +66,6 @@ public class AddMoneyFragment extends Fragment {
         email = prf.getString(TAG_EMAIL);
         name = prf.getString(TAG_FIRSTNAME);
         number = prf.getString(TAG_MOBILE);
-//        paymentGateway = prf.getString("paymentGateway", "paytm");
 
         addmoney.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -79,11 +78,7 @@ public class AddMoneyFragment extends Fragment {
                     } else if (amt > 20 || amt == 20) {
                         errorMessage.setVisibility(View.GONE);
 
-//                        if (paymentGateway.equals("instamojo")) {
-//                            ((MyWalletActivity) getActivity()).callInstamojoPay(email, number, obj, "Add Money to Wallet", name);
-//                        }
-
-                        if (paymentGateway.equals("paytm")) {
+                        if (paymentGateway.equals("khalti")) {
                            // ((MyWalletActivity) getActivity()).PaytmAddMoney(email, number, obj, "Add Money to Wallet", name);
 
                             Intent intent = new Intent(getActivity(), Integrationforkhalti.class);
