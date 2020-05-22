@@ -290,9 +290,15 @@ public class Integrationforkhalti extends AppCompatActivity {
         params.put(TAG_INSTA_TOKEN, tokenid);
         params.put("status", "Unverified - "+ data.get("product_name").toString());
 
+
+        //sending for payment completion
+            Map<String, String> paramskhalti = new HashMap<>();
+            paramskhalti.put(TAG_INSTA_TOKEN, tokenid);
+            params.put("addamount", temp);
+
         // getting JSON string from URL
         JSONObject json1 = jsonParser.makeHttpRequest(url, "POST", params);
-        JSONObject json2 = jsonParser.makeHttpRequest(khalti, "POST", params);
+       // JSONObject json2 = jsonParser.makeHttpRequest(khalti, "POST", paramskhalti);
 
 
 
@@ -302,7 +308,7 @@ public class Integrationforkhalti extends AppCompatActivity {
             try {
                 // Checking for SUCCESS TAG
                 success = json1.getInt(TAG_SUCCESS);
-                success1 = json2.getInt(TAG_SUCCESS);
+             //   success1 = json2.getInt(TAG_SUCCESS);
 
             } catch (JSONException e) {
                 e.printStackTrace();
@@ -333,7 +339,7 @@ public class Integrationforkhalti extends AppCompatActivity {
                     /*
                       Updating parsed JSON data into ListView
                      */
-                    if (success == 1 && success1 == 1) {
+                    if (success == 1) {
                         // jsonarray found
                         // Getting Array of jsonarray
                         String s = temp;

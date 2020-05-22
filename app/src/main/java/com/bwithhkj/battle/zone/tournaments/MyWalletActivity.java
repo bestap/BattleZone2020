@@ -39,7 +39,7 @@ import java.util.Random;
 
 
 
-public class MyWalletActivity extends AppCompatActivity implements PaytmPaymentTransactionCallback {
+public class MyWalletActivity extends AppCompatActivity{
 
     // Progress Dialog
     private ProgressDialog pDialog;
@@ -49,7 +49,7 @@ public class MyWalletActivity extends AppCompatActivity implements PaytmPaymentT
 
     // url to get all products list
     private static final String url = config.mainurl + "payment.php";
-    private static final String urlpaytmchecksum = config.paytmchecksum + "generateChecksum.php";
+   // private static final String urlpaytmchecksum = config.paytmchecksum + "generateChecksum.php";
 
     // JSON Node names
     private static final String TAG_SUCCESS = "success";
@@ -102,7 +102,7 @@ public class MyWalletActivity extends AppCompatActivity implements PaytmPaymentT
    private int success;
 
 
-    public void PaytmAddMoney(String email, String phone, String amount, String purpose, String buyername) {
+   /* public void PaytmAddMoney(String email, String phone, String amount, String purpose, String buyername) {
 
         paytmemail = email;
         paytmphone = phone;
@@ -119,13 +119,13 @@ public class MyWalletActivity extends AppCompatActivity implements PaytmPaymentT
         // Join Player in Match in Background Thread
         new GetChecksum().execute();
 
-    }
+    }*/
 
-    class GetChecksum extends AsyncTask<String, String, String> {
+ /*   class GetChecksum extends AsyncTask<String, String, String> {
 
-        /**
+        *//**
          * Before starting background thread Show Progress Dialog
-         * */
+         * *//*
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
@@ -136,9 +136,9 @@ public class MyWalletActivity extends AppCompatActivity implements PaytmPaymentT
             pDialog.show();
         }
 
-        /**
+        *//**
          * getting All products from url
-         * */
+         * *//*
         protected String doInBackground(String... args) {
             // Building Parameters
             Map<String, String> params = new HashMap<>();
@@ -171,9 +171,9 @@ public class MyWalletActivity extends AppCompatActivity implements PaytmPaymentT
             return null;
         }
 
-        /**
+        *//**
          * After completing background task Dismiss the progress dialog
-         * **/
+         * **//*
         protected void onPostExecute(String file_url) {
             // dismiss the dialog after getting all products
             pDialog.dismiss();
@@ -181,9 +181,9 @@ public class MyWalletActivity extends AppCompatActivity implements PaytmPaymentT
             // updating UI from Background Thread
             runOnUiThread(new Runnable() {
                 public void run() {
-                    /*
+                    *//*
                       Updating parsed JSON data into ListView
-                     */
+                     *//*
                     try {
 
                         Map<String, String> paramMap = new HashMap<>();
@@ -221,9 +221,9 @@ public class MyWalletActivity extends AppCompatActivity implements PaytmPaymentT
 
         }
 
-    }
+    }*/
 
-    @Override
+  /*  @Override
     public void someUIErrorOccurred(String inErrorMessage) {
         Toast.makeText(getApplicationContext(), "UI Error " + inErrorMessage, Toast.LENGTH_LONG).show();
     }
@@ -279,7 +279,7 @@ public class MyWalletActivity extends AppCompatActivity implements PaytmPaymentT
     public void onTransactionCancel(String inErrorMessage, Bundle inResponse) {
         Toast.makeText(getApplicationContext(), "Transaction Cancelled" + inResponse.toString(), Toast.LENGTH_LONG).show();
     }
-
+*/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
